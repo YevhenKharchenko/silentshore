@@ -1,0 +1,95 @@
+.policy-section {
+  background: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-bg-wrapper {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+  }
+}
+
+.policy-main-title {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  text-align: center;
+  color: #161616;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 60px;
+  }
+}
+
+.policy-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-span {
+  font-weight: 700;
+}
+
+.policy-link {
+  font-weight: 700;
+}

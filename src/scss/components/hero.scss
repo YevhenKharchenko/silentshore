@@ -1,0 +1,97 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 142px;
+  padding-bottom: 482px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 178px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: bottom right;
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+    max-width: 519px;
+  }
+}
+
+.hero-title {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.16667;
+  color: #060606;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 60px;
+    line-height: 1.06667;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #060606;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.hero-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #737373;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.hero-text-span {
+  font-weight: 700;
+  color: #060606;
+
+  @include media(desktop) {
+  }
+}

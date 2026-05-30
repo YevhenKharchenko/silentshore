@@ -1,0 +1,149 @@
+.footer {
+  background: #090909;
+  border-top: 1px solid #ffe922;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.footer-container {
+  padding: 0 20px;
+
+  @include media(desktop) {
+    padding: 0 64px;
+  }
+}
+
+.footer-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.footer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 1.06667;
+  color: #ffe922;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px 20px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    gap: 16px 43px;
+  }
+}
+
+.footer-nav-list-item {
+  width: 100%;
+  max-width: 140px;
+
+  @include media(desktop) {
+    max-width: 182px;
+  }
+}
+
+.footer-nav-list-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.footer-bottom-wrapper {
+  padding-top: 24px;
+  border-top: 2px solid #ffe922;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 156px;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-list-item {
+  @include media(desktop) {
+  }
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.footer-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
