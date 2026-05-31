@@ -1,13 +1,29 @@
 .header {
-  background: #fffad0;
-  padding: 12px 0;
+  background: linear-gradient(
+    90deg,
+    #000080 0%,
+    #000086 8.33%,
+    #00008c 16.67%,
+    #000093 25%,
+    #009 33.33%,
+    #00009f 41.67%,
+    #0000a6 50%,
+    #0000ac 58.33%,
+    #0000b3 66.67%,
+    #0000b9 75%,
+    #0000c0 83.33%,
+    #0000c6 91.67%,
+    #0000cd 100%
+  );
+  border-bottom: 4px solid #c0c0c0;
+  padding: 4px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding: 18px 0;
+    padding: 12px 0;
   }
 }
 
@@ -20,9 +36,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   width: 100%;
 
   @include media(desktop) {
+    flex-direction: column;
   }
 }
 
@@ -30,14 +48,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Palanquin Dark', sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.06667;
-  color: #060606;
-  min-width: fit-content;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #0f0;
+  max-width: 189px;
 
   @include media(desktop) {
+    font-size: 36px;
+    line-height: 1.11111;
+    max-width: max-content;
   }
 }
 
@@ -61,13 +82,17 @@
 
 .nav-list-link {
   @include media(desktop) {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    background: #c0c0c0;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: #060606;
+    color: #000;
     transition:
+      background 0.3s ease-in-out,
       color 0.3s ease-in-out,
       opacity 0.3s ease-in-out,
       text-shadow 0.3s ease-in-out;
@@ -76,11 +101,15 @@
     &:focus,
     &:active,
     &.active {
+      background: #0f0;
     }
   }
 }
 
 .nav-btn {
+  background: #046;
+  border: 2px solid #0f0;
+  padding: 5px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +120,10 @@
 }
 
 .close-btn {
+  background: #046;
+  border: 2px solid #0f0;
+  padding: 4px 10px;
+  display: flex;
   display: none;
   justify-content: center;
   align-items: center;
