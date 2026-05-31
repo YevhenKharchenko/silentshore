@@ -64,3 +64,15 @@ html {
     line-height: 1.18182;
   }
 }
+
+.section-subtitle {
+  padding: 4px 12px;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}

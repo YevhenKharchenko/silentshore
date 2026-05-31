@@ -1,20 +1,20 @@
 .about-section {
-  background: #fffad0;
+  background: #000080;
 
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 64px;
-  padding-bottom: 450px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     max-width: 1440px;
   }
 }
@@ -25,53 +25,106 @@
 }
 
 .about-content-wrapper {
+  background: #c0c0c0;
+  border: 4px solid #fff;
+  padding: 4px;
+
   @include media(desktop) {
   }
 }
 
-.about-text-wrapper {
+.about-subtitle {
+  background: linear-gradient(
+    90deg,
+    #008080 0%,
+    #007e7e 9.09%,
+    #007b7b 18.18%,
+    #007979 27.27%,
+    #007676 36.36%,
+    #007474 45.45%,
+    #007272 54.55%,
+    #006f6f 63.64%,
+    #006d6d 72.73%,
+    #006b6b 81.82%,
+    #006868 90.91%,
+    #066 100%
+  );
+
   @include media(desktop) {
-    max-width: 728px;
-    margin-left: auto;
   }
 }
 
-.about-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.about-content-container {
+  background: #fff;
+  padding: 24px 16px;
 
   @include media(desktop) {
+    padding: 32px;
   }
 }
 
 .about-title {
-  @include media(desktop) {
-  }
-}
-
-.about-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.55);
-
-  @include media(desktop) {
-    font-size: 18px;
-    line-height: 1.55556;
-  }
-}
-
-.about-span {
-  font-weight: 700;
+  text-align: left;
   color: #000;
 
   @include media(desktop) {
   }
 }
 
-.about-img {
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
   @include media(desktop) {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.about-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    min-width: 584px;
+    margin: 0;
+  }
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    max-width: 584px;
+  }
+}
+
+.about-text {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-bottom-text {
+  background: #ffffe0;
+  border: 2px solid #808080;
+  padding: 14px;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #800000;
+  margin-top: 8px;
+
+  @include media(desktop) {
+    padding: 14px 14px 18px;
   }
 }

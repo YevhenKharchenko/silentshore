@@ -1,52 +1,48 @@
 .works-section {
+  background: linear-gradient(
+    180deg,
+    #000050 0%,
+    #005 11.11%,
+    #00005a 22.22%,
+    #000060 33.33%,
+    #000065 44.44%,
+    #00006a 55.56%,
+    #000070 66.67%,
+    #000075 77.78%,
+    #00007a 88.89%,
+    #000080 100%
+  );
+
   @include media(desktop) {
   }
 }
 
 .works-bg-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
     max-width: 1440px;
   }
 }
 
 .works-container {
   @include media(desktop) {
-    padding-right: 0;
   }
 }
 
 .works-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  background: #000;
+  border: 4px solid #0f0;
+  padding: 20px 12px;
 
   @include media(desktop) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.works-text-wrapper {
-  @include media(desktop) {
-    max-width: 569px;
-  }
-}
-
-.works-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-  @include media(desktop) {
+    padding: 36px;
   }
 }
 
@@ -55,38 +51,70 @@
   }
 }
 
-.works-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #737373;
+.works-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
-    font-size: 18px;
-    line-height: 1.55556;
-  }
-}
-
-.works-span {
-  font-weight: 700;
-  color: #060606;
-
-  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
   }
 }
 
 .works-img {
-  @include media(desktop) {
-  }
-}
-
-.works-bg-img {
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 743px;
+    min-width: 588px;
     margin: 0;
+  }
+}
+
+.works-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 588px;
+  }
+}
+
+.works-text {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #c0c0c0;
+
+  @include media(desktop) {
+  }
+}
+
+.works-middle-text {
+  color: #0ff;
+
+  @include media(desktop) {
+  }
+}
+
+.works-bottom-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.works-bottom-text {
+  color: #ff0;
+
+  @include media(desktop) {
   }
 }
